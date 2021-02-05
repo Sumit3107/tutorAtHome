@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tutor At Home- Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="headerbg">
+      <header class="container">
+        <div class="row justify-content-between">
+          <div>
+            <a href="/home.html">
+              <img src="/images/tahlogo.png" class="logo" alt="logo" />
+            </a>
+          </div>
+          <div></div>
+          <div class="float-right d-flex align-items-center">
+            <a href="/pages/login.html">
+              <button class="btn btn-outline-primary">LogIn/Register</button>
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 leftside text-center">
+                <img src="../images/tahlogo.png" class="pic w-40" alt="tah" />
+                <h1>Welcome To The World Of Tutors</h1>
+                <h5>
+                  Share your knowledge with us, we will spread it to the outside world.
+                </h5>
+              </div>
+          <div class="col-md-6 rightside">
+            <div class="formdiv">
+              <form class="loginform p-5">
+                <div class="row">
+                  <div class="p-1 loglab">Login</div>
+                  <a href="register.html" style="text-decoration:none;">
+                    <div class="ml-2 p-1">Register</div>
+                  </a>
+                </div>
+                <div class="text-center m-2">
+                  <!-- <GoogleLogin
+                    class="googlelogin rounded"
+                    clientId="754482725937-a63v5l1i58d0im0cafvuqi598hhfjmi5.apps.googleusercontent.com"
+                    buttonText="SignIn With Google"
+                    onSuccess={responseGoogle}
+                    onFailure={responseGoogle}
+                    cookiePolicy={"single_host_origin"}
+                  /> -->
+                </div>
+                <h5 class="text-center">OR</h5>
+                <div class="form-group mt-2">
+                  <label for="emailid">Email Id</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your Email..."
+                    class="form-control"
+                    id="emailid"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pass">Password</label>
+                  <input
+                    type="password"
+                    placeholder="Enter your Password..."
+                    class="form-control"
+                    id="pass"
+                  />
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

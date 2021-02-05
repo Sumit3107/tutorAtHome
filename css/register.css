@@ -1,0 +1,55 @@
+*{
+    font-family: cursive;
+}
+.leftside{
+    background: rgb(253, 253, 253);
+    background: radial-gradient(circle, rgb(243, 243, 243) 0%, rgb(8, 60, 105) 80%);
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 43, 70);
+}
+.rightside{
+    background: linear-gradient(to top, rgb(112, 156, 179) , rgb(243, 243, 243) );
+}
+.formdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:89vh;
+}
+.registerform{
+    color:rgb(10, 43, 70);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    max-height: 85vh;
+    width:30vw;
+    overflow-y: scroll;
+}
+.registerform::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.registerform {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.googlelogin{
+    backdrop-filter: blur( 0px );
+    color: black;
+}
+
+.reglab{
+    border-bottom: 2px solid rgb(10, 43, 70);
+}
+@media only screen and (max-width: 768px) {
+    .registerform {
+      width: auto;
+    }
+  }
