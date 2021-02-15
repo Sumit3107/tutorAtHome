@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/teacherdash.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <div class="container-fluid" id="header">
+        <div class="logopart text-center w-100">
+            <img src="../images/tahlogo.png" alt="logo">
+        </div>
+        <div class="navpart row p-2">
+            <div>
+                <i class="fa fa-bars pl-1" id="toggle"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="menubar col-6">
+                <div class="row mt-2 pb-2 menuitem">
+                    <img class="col-4" src="../images/user.png" alt="user" id="user">
+                    <div class="text-center">Username</div>
+                </div>
+                <div class="row menuitem p-2">
+                    <i class="col-2 fa fa-home"></i>
+                    <div class="">Home</div>
+                </div>
+            </div>
+            <div class="profile col-6">
+                Sumit
+            </div>
+        </div>
+    </div>
+    <script src="../js/teachdash.js"></script>
 </body>
 </html>
