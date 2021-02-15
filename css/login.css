@@ -4,7 +4,7 @@
 .leftside{
     background: rgb(253, 253, 253);
     background: radial-gradient(circle, rgb(243, 243, 243) 0%, rgb(8, 60, 105) 80%);
-    height: 89vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,8 @@
     color: rgb(10, 43, 70);
 }
 .rightside{
-    background: linear-gradient(to top, rgb(112, 156, 179) , rgb(243, 243, 243) );
+    /* background: linear-gradient(to top, rgb(112, 156, 179) , rgb(243, 243, 243) ); */
+    background-color: white;
 }
 .formdiv{
     display: flex;

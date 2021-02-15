@@ -1,9 +1,10 @@
 .headerbg{
-  background-color: rgb(245, 245, 248);
+  /* background-color: rgb(245, 245, 248); */
+  background-color: white;
   border-bottom: 1px solid rgb(31,102,164);
 }
 .logo {
-    height: 11vh;
+    height: 8vh;
     cursor: pointer;
 }
 
