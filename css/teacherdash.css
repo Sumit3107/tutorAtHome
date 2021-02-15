@@ -9,16 +9,15 @@
     background-color: rgb(52, 52, 53);
     height: auto;
     width: 40vw;
+    transition: 0.3;
 }
 #toggle{
     cursor: pointer;
 }
-.row{
+.menuitem{
     display: flex;
     align-items: center;
     border-top:none;
-}
-.menuitem{
     border-bottom: 1px solid white;
 }
 #user{
