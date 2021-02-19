@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/finalreg.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Registration - Final Step</title>
+</head>
+<body>
+    <div class="container register-form">
+        <form action="" method="post">
+        <div class="form">
+          <div class="note">
+            <img src="../images/tahlogo.png" alt="logo" />
+          </div>
+          <h2 class="text-center" id="final">Registration - Final Step</h2>
+          <div class="form-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                    value="Sumit"
+                    name="firstname"
+                    readonly
+                  />
+                </div>
+                <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Id"
+                      value="roy.sumit31@gmail.com"
+                      name="emailid"
+                      readonly
+                    />
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last name"
+                      value="Kumar"
+                      name="lastname"
+                      readonly
+                    />
+                  </div>
+                <div class="row">
+                  <div class="form-group col-md-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="+91"
+                      value="+91"
+                      name="ccode"
+                      readonly
+                    />
+                  </div>
+                  <div class="form-group col-md-10">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      value=""
+                      name="phoneno"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="form-group">
+              <div class="pb-2">Mode of Learning?</div>
+              <div class="form-check form-check-inline col-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="online"
+                  name="mode"
+                  required
+                />
+                <label class="form-check-label">Online</label>
+              </div>
+              <div class="form-check form-check-inline col-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="offline"
+                  name="mode"
+                  required
+                />
+                <label class="form-check-label">Offline</label>
+              </div>
+              <div class="form-check form-check-inline col-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="both"
+                  name="mode"
+                  required
+                />
+                <label class="form-check-label">Both</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <select class="custom-select my-1 mr-sm-2" id="subject" required>
+                    <option value="" selected disabled hidden>Stream</option>
+                    <option value="1">Science</option>
+                    <option value="2">Arts</option>
+                    <option value="3">Commerce</option>
+                    <option value="4">Prefer not to say</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <select class="custom-select my-1 mr-sm-2" id="subject" required>
+                      <option value="" selected disabled hidden>Interests</option>
+                      <option value="1">IT</option>
+                      <option value="2">Marketing</option>
+                      <option value="3">Arts</option>
+                      <option value="4">Professional skills</option>
+                      <option value="5">Soft Skills</option>
+                      <option value="6">Others</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <select class="custom-select my-1 mr-sm-2" id="subject" required>
+                    <option value="" selected disabled hidden>Qualification</option>
+                    <option value="1">Under 12th</option>
+                    <option value="2">Undergraduate</option>
+                    <option value="3">Graduate</option>
+                    <option value="4">Post-Graduate</option>
+                    <option value="5">Phd.</option>
+                    <option value="6">Others</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btnSubmit">Submit</button>
+          </div>
+        </div>
+    </form>
+      </div>
+</body>
+</html>

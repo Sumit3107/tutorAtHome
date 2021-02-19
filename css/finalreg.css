@@ -1,0 +1,35 @@
+.note
+{
+    text-align: center;
+    height: 8vh;
+    background: rgb(186, 224, 248);
+    color: #fff;
+    font-weight: bold;
+}
+#final{
+    color: rgb(8,59,102);
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif
+}
+.note img{
+    height: inherit;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+}
