@@ -147,9 +147,9 @@
         z-index: 2;
         background-color: rgba(0, 0, 0,0.8);
         width: 100vw;
-        height: auto;
         top: 0px;
         left: 0px;
+        right: 0px;
     }
     #navsmallcontent{
         background-color: rgb(252, 250, 250);
@@ -157,6 +157,7 @@
         height: 100vh;
         transition: height .5s;
         transition-timing-function: ease-out .3s;
+        overflow-x: scroll;
     }
     #navsmallcontent li {
         font-size: 18px;
@@ -179,7 +180,7 @@
 }
 @media only screen and (max-width: 576px){
     #navsmallcontent{
-        height: 100%;
+        height: 100vh;
     }
     #navsmallcontent li {
         font-size: 12px;
