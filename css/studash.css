@@ -1,0 +1,190 @@
+#header {
+    display: none;
+    height: 8vh;
+}
+#bars{
+    display: none;
+}
+#logo,
+.category {
+  height: inherit;
+}
+#searchinput {
+  border: none;
+}
+#search {
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+#searchbtn {
+  border: none;
+  background-color: white;
+}
+#searchinput:focus,
+#searchbtn:focus {
+  box-shadow: none;
+  outline: none;
+}
+#header a {
+  text-decoration: none;
+  color: black;
+}
+#catoption {
+  display: hidden;
+}
+#categories,
+.teacher a,
+.learning a,
+#wishlist i,
+#cart i,
+#notify i {
+  cursor: pointer;
+}
+#categories:hover,
+#teacher a:hover,
+#learning a:hover,
+#wishlist i:hover,
+#cart i:hover,
+#notify:hover {
+  color: rgb(10, 153, 248);
+}
+#wishlist i,
+#cart i,
+#notify {
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#catoption {
+  display: none;
+  position: absolute;
+  background-color: rgba(253, 252, 252, 0.88);
+  margin-top: 325px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+#catoption .dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#catoption a:hover {
+  background-color: rgb(240, 239, 239);
+}
+.dropdown:hover #catoption {
+  display: block;
+}
+#user {
+  height: 8vh;
+  cursor: pointer;
+}
+#userpro {
+  height: 10vh;
+}
+.navdropdown {
+  position: relative;
+  display: inline-block;
+}
+#navcontent {
+  display: none;
+  position: absolute;
+  background-color: rgba(253, 252, 252, 0.88);
+  margin-left: -260px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition:0.4s;
+}
+#navcontent li {
+  list-style: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#navcontent ul {
+  padding-left: 0px;
+}
+#navcontent li:hover {
+  background-color: rgb(240, 239, 239);
+}
+.navdropdown:hover #navcontent {
+  display: block;
+}
+.navsmall, #navsmallcontent, .cross{
+    display: none;
+}
+#navsmallcontent{
+    width: 50vw;
+}
+@media only screen and (max-width: 768px){
+    #categories,.dropdown:hover #catoption,#search , #search button, #search input, #teacher,#learning, #wishlist i, #cart i, #notify i, #user, .navdropdown:hover #navcontent{
+        display: none;
+        border: none;
+    }
+    #bars{
+        display: block;
+        cursor: pointer;
+    }
+    .navsmall, #navsmallcontent, .cross{
+        display: none;
+    }
+    .cross{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .cross i{
+        cursor: pointer;
+    }
+    .navsmall{
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 0, 0,0.8);
+        width: 100vw;
+        height: auto;
+        top: 0px;
+        left: 0px;
+    }
+    #navsmallcontent{
+        background-color: rgb(252, 250, 250);
+        width: 50vw;
+        height: 100vh;
+        transition: height .5s;
+        transition-timing-function: ease-out .3s;
+    }
+    #navsmallcontent li {
+        font-size: 18px;
+        list-style: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-decoration: none;
+      }
+      #navsmallcontent ul {
+        padding-left: 0px;
+      }
+      #navsmallcontent li:hover {
+        background-color: rgb(240, 239, 239);
+      }
+      .navdropdown:hover #navcontent {
+        display: none;
+      }
+}
+@media only screen and (max-width: 576px){
+    #navsmallcontent{
+        height: 100%;
+    }
+    #navsmallcontent li {
+        font-size: 12px;
+    }
+    #navsmallcontent li a{
+        text-decoration: none;
+    }
+}

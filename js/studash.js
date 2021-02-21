@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $("#bars").click(function(){
+      $("#navsmallcontent").show(500);
+      $('.cross').show();
+    });
+    $('#cut').click(function(){
+        $('.navsmall').hide(500);
+    })
+});
