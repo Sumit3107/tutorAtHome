@@ -4,6 +4,7 @@ $(document).ready(function(){
       $('.cross').show();
     });
     $('#cut').click(function(){
+        $('.cross').hide();
         $('.navsmall').hide(500);
     })
 });

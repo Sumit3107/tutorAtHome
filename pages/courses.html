@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/studash.css" />
+    <link rel="stylesheet" href="../css/courses.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>All Courses</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center" id="header">
+        <i class="fa fa-bars m-3" id="bars"></i>
+        <img class="m-auto" src="../images/tahlogo.png" alt="logo" id="logo" />
+        <div
+          class="col-1 dropdown d-flex align-items-center pt-4 m-auto category"
+        >
+          <p id="categories">Categories</p>
+          <div class="border dropdown-content rounded" id="catoption">
+            <a class="dropdown-item" href="#">IT</a>
+            <a class="dropdown-item" href="#">Marketing</a>
+            <a class="dropdown-item" href="#">Arts</a>
+            <a class="dropdown-item" href="#">Professional Skills</a>
+            <a class="dropdown-item" href="#">Soft Skills</a>
+            <a class="dropdown-item" href="#">Others</a>
+          </div>
+        </div>
+        <div
+          class="row form-inline pl-2 col-6 d-flex align-items-center mt-1"
+          id="search"
+        >
+          <button id="searchbtn"><i class="fa fa-search"></i></button>
+          <input
+            class="form-control col-11"
+            type="text"
+            placeholder="Search for anything..."
+            id="searchinput"
+          />
+        </div>
+        <div class="pt-2 pl-4 m-auto" id="teacher">
+          <a href="teachdash.html">Teacher</a>
+        </div>
+        <div class="pt-2 pl-4 m-auto" id="learning">
+          <a href="courses.html">My Courses</a>
+        </div>
+        <div class="d-flex align-items-center pt-2 pl-3 m-auto" id="wishlist">
+          <a href="wishlist.html"><i class="far fa-heart"></i></a>
+        </div>
+        <div class="d-flex align-items-center pt-2 pl-3 m-auto" id="cart">
+          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+        <div class="d-flex align-items-center pt-2 pl-3 m-auto" id="notify">
+          <a href="notification.html"><i class="fal fa-bell"></i></a>
+        </div>
+        <div class="navdropdown float-right p-2">
+          <img
+            class="border rounded-circle m-auto"
+            src="../images/user.png"
+            alt="user"
+            id="user"
+          />
+          <div class="border rounded p-4" id="navcontent">
+            <div class="row">
+              <img src="../images/user.png" alt="user" id="userpro" />
+              <div
+                class="d-flex flex-column justify-content-start align-items-center pl-2 pt-2"
+              >
+                <div style="font-size: 20px"><b>Sumit Kumar</b></div>
+                <div style="font-size: 12px">roy.sumit31@gmail.com</div>
+              </div>
+            </div>
+            <hr />
+            <ul>
+              <li><a href="#">Live classes</a></li>
+              <li><a href="courses.html">My Courses</a></li>
+              <li><a href="cart.html">My Cart</a></li>
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="teachdash.html">Teacher</a></li>
+              <hr />
+              <li><a href="setting.html">Account Settings</a></li>
+              <li><a href="purchistory.html">Purchase History</a></li>
+              <hr />
+              <li><a href="profile.html">Edit Profile</a></li>
+              <hr />
+              <li><a href="help.html">Help</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navsmall row">
+        <div class="border rounded p-4" id="navsmallcontent">
+          <div class="row p-2">
+            <img src="../images/user.png" alt="user" id="userpro" />
+            <div
+              class="d-flex flex-column justify-content-start align-items-center pl-2 pt-2"
+            >
+              <div style="font-size: 20px"><b>Sumit Kumar</b></div>
+              <div style="font-size: 12px">roy.sumit31@gmail.com</div>
+            </div>
+          </div>
+          <hr />
+          <ul>
+            <li><a href="#">Live classes</a></li>
+            <li><a href="courses.html">My Courses</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="teachdash.html">Teacher</a></li>
+            <hr />
+            <li><a href="setting.html">Account Settings</a></li>
+            <li><a href="purchistory.html">Purchase History</a></li>
+            <hr />
+            <li><a href="profile.html">Edit Profile</a></li>
+            <hr />
+            <li><a href="help.html">Help</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+        <div class="cross ml-2">
+          <i class="fa fa-times" id="cut"></i>
+        </div>
+      </div>
+    </div>
+    <div class="courses mt-3">
+      <div class="container pt-5 pl-5 pb-2">
+        <h2>My Courses</h2>
+        <div class="coursenav">
+          <ul class="cnav">
+            <li><a href="courses.html" id="active">All Couses</a></li>
+            <li><a href="wishlist.html" class="notactive">Wishlist</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container p-5">
+      <div class="row p-2">
+        <div class="col-12 col-md-2">
+          <div>Sort By</div>
+          <div class="dropdown pt-2 pr-2 pb-2">
+            <button
+              class="btn btn-info dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Recently Enrolled
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Recently Enrolled</a>
+              <a class="dropdown-item" href="#">A to Z</a>
+              <a class="dropdown-item" href="#">Z to A</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 ml-3">
+          <div>Filter</div>
+          <div class="row">
+            <div class="dropdown p-2">
+              <button
+                class="btn btn-info dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Category
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">IT</a>
+                <a class="dropdown-item" href="#">Marketing</a>
+                <a class="dropdown-item" href="#">Arts</a>
+                <a class="dropdown-item" href="#">Professional Skills</a>
+                <a class="dropdown-item" href="#">Soft Skills</a>
+                <a class="dropdown-item" href="#">Others</a>
+              </div>
+            </div>
+            <div class="dropdown p-2">
+              <button
+                class="btn btn-info dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Progress
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Completed</a>
+                <a class="dropdown-item" href="#">In progress</a>
+                <a class="dropdown-item" href="#">Not Started</a>
+              </div>
+            </div>
+            <div class="dropdown p-2">
+              <button
+                class="btn btn-info dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Teacher
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Teacher 1</a>
+                <a class="dropdown-item" href="#">Teacher 2</a>
+                <a class="dropdown-item" href="#">Teacher 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2 col-md-3 p-2">
+          <div class="card">
+            <img
+              class="card-img-top w-100"
+              src="../images/coursepic.jpg"
+              alt="course"
+            />
+            <h5 class="card-title p-2">HTML</h5>
+            <p class="card-text p-2">
+              Html is Hyper Text Markup Language which help in creating web
+              pages.
+            </p>
+            <button class="btn btn-primary">View Course</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/header.js"></script>
+  </body>
+</html>
